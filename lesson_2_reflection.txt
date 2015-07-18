@@ -15,3 +15,7 @@ Then commit this one logical change.
 Then move the next modified file, and so on – one logical change by logical change – into the staging area.  
 This way, all the commits contain only one logical change, although a bunch of these changes can be made en masse in the working directory.  
 May be better to only work on a logical problem at a time, so that it's easy to co-ordinate commits.
+
+####What are some situations when branches would be helpful in keeping your history organized? How would branches help?  
+Experimenting with new directions, whilst keeping a working version instantly available.  
+A large overhaul.  
