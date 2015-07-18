@@ -1,4 +1,17 @@
-What happens when you initialize a repository? Why do you need to do it?
+####What happens when you initialize a repository? Why do you need to do it?
 
 creates a folder .git  
 to allow git to track changes
+
+####How is the staging area different from the working directory and the repository? What value do you think it offers?  
+It allows me to choose which files are being worked on, so that these can be committed en bloc.  
+Why can't the entire working directory be the staging area? Is it because of size?
+
+
+####How can you use the staging area to make sure you have one commit per logical change?
+You can make a bunch of changes in the working directory.  
+Then move one modified file into the staging area.  
+Then commit this one logical change.  
+Then move the next modified file, and so on – one logical change by logical change – into the staging area.  
+This way, all the commits contain only one logical change, although a bunch of these changes can be made en masse in the working directory.  
+May be better to only work on a logical problem at a time, so that it's easy to co-ordinate commits.
