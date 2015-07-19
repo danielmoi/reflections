@@ -28,3 +28,8 @@ Good also for collaboration with other people, working on separate aspects
 Branches can be complicated!  
 And it also helps to understand how unreachable commits can be created.  
 And a diagram is easier to grasp than a linear (even using the `git log --graph --oneline command) print-out in CLI.  
+
+####6. What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+The changes are combined.  
+It's tricky though!  
+Make sure I am in the branch that I want to have as the continuing branch - the master branch.  (Or, could I rename it later?). Ran into problems running a merge from a side_branch, instead of master.  Tried reset revert and pull, and I think *somehow* it got fixed...
