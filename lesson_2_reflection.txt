@@ -33,3 +33,20 @@ And a diagram is easier to grasp than a linear (even using the `git log --graph 
 The changes are combined.  
 It's tricky though!  
 Make sure I am in the branch that I want to have as the continuing branch - the master branch.  (Or, could I rename it later?). Ran into problems running a merge from a side_branch, instead of master.  Tried reset revert and pull, and I think *somehow* it got fixed...
+
+####7. What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+Note that B is a *stand-in* for a line – not the actual code itself  
+B' (B prime) is a modified version of that line; B'' (B double prime) is another modified version of that line)  
+And Git doesn't know if B' is a completely new line, or just modified.  Git just notes that the lines are **different**  
+Git will say "Automatic merge failed; fix conflicts and then commit the result".  
+
+`<<<<<<<HEAD` = 7 "heads" – this indicates where I am at the moment.  
+`|||||||merged common ancestors` – this indicates where the conflict is – changes made in the **other** branch that aren't present in the **current** (head) branch  
+`=======` – what the code was replaced with (?)  – this code could be moved elsewhere in the file, but it may not show because it didn't cause a conflict.  
+
+Make changes, then `git status` > `both modified: <file_name>`  
+Then `git add <file_name>`  
+Then `git status` > All conflicts are fixed but you are still merging – use `git commit` to continue merging  
+Then `git commit`  
+
+Automatic and manual merging is complicated!!
