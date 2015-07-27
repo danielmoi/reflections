@@ -17,3 +17,7 @@ I think this is to allow comparison between the local and remote repos (via the 
 It would require emailing versions / working off the same server?  
 It would be more difficult because I would lose tools like comparison between versions.  
 But it would be easier with respect to not needing to setup and learn git and GitHub.
+
+####6. When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+It allows more flexibility – changes can be made without the "live" version being broken.  
+Changes can be reviewed at the author's leisure, and incorporated so that the master branch always "works".
