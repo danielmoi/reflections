@@ -9,3 +9,6 @@ The remote repository may not necessarily have changes that I want in my local r
 Clones are simply copies.  
 Forks are clones of a remote – to another remote.  
 Branches are within a repo – and can exist in forks and clones  
+
+####What is the benefit of having a copy of the last known state of the remote stored locally?
+I think this is to allow comparison between the local and remote repos (via the locally stored copy of the remote).  
